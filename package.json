@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "aspnetcore-workshop",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "pdf": "foreach -g 'Labs/*.md' -x 'markdown-pdf \"#{path}.md\" -o \"pdfs/${path}.pdf\"'"
+  },
+  "dependencies": {
+    "markdown-pdf": "^7.0.0",
+    "foreach-cli": "^1.6.1"
+  }
+}
